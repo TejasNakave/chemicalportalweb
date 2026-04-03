@@ -323,6 +323,16 @@ export default function SignupPage() {
               <div className="ml-3 text-sm">
                 <label htmlFor="terms" className="text-gray-700">
                   I agree to the{" "}
+                  <Link href="/privacy" className="font-semibold text-blue-600 hover:text-blue-800">
+                    Privacy Policy
+                  </Link>
+                </label>
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
               disabled={isLoading || success}
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200 transition-all flex items-center justify-center space-x-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
@@ -341,20 +351,6 @@ export default function SignupPage() {
                   <span>Create Account</span>
                 </>
               )}
-                  <Link href="/privacy" className="font-semibold text-blue-600 hover:text-blue-800">
-                    Privacy Policy
-                  </Link>
-                </label>
-              </div>
-            </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200 transition-all flex items-center justify-center space-x-2 shadow-lg"
-            >
-              <UserPlus className="h-5 w-5" />
-              <span>Request Access</span>
             </button>
           </form>
 
